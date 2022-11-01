@@ -919,8 +919,9 @@ const startEditingHandler = () => {
 Seguidamente, se crea otra función llamada `editHandler` que hará uso del `prop` que recibe el componente `onEdit` enviándole el `id` de la nota a actualizar y el nuevo texto de la `_note`. Además, el valor de `isEditing` será cambiando a `false`.
 
 ```jsx
-const startEditingHandler = () => {
-  setIsEditing(true);
+const editHandler = () => {
+  onEdit(id, _note);
+  setIsEditing(false);
 };
 ```
 
