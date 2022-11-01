@@ -1056,6 +1056,27 @@ return (
 );
 ```
 
+El componente `CardTextArea.css` será estilizado de la siguiente manera: 
+
+```css
+.edit-input {
+    background-color: transparent;
+    margin-top: 16px;
+    height: 160px;
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    resize: none;
+}
+
+.edit-input:not(:read-only) {
+    background-color: #01a2b1;
+}
+```
+
 Ya que dicho componente ha sido creado se procede a importarlo dentro del componente `Card` de la siguiente manera:
 
 ```jsx
